@@ -62,6 +62,12 @@ export default function Home() {
             mx='auto'
             my='80px'
             boxShadow='2px 4px 8px rgba(0,0,0,.3)'
+            cursor='pointer'
+            _hover={{
+              transform: "translateY(-4px)",
+              boxShadow: "2px 4px 12px rgba(0,0,0,.4)",
+            }}
+            transition='all .3s'
           >
             <Image alt={title} src={image} />
             <Box px='40px' pt='24px' pb='40px'>
@@ -82,7 +88,7 @@ export default function Home() {
                   </Text>
                 ))}
               </HStack>
-              <Text fontSize='24px' mb='24px'>
+              <Text fontWeight='bolder' color='#666' fontSize='24px' mb='24px'>
                 {title}
               </Text>
 
